@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="header" style="background-image: url('Images\bg.jpg');">
+    <div class="container">
+    <nav>
+        <img src="Images\logo.png" class="logo">
+        <ul>
+            
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Skills</a></li>
+        </ul>
+    </nav>
+    <br>
+    <div class="header-text">
+        <h3>Programming Learner</h3>
+        <h1>Hi,I am <span> Arpita</span>!</h1>
+    </div>
+    </div>
+    </div>
+    
+    <!----------About me----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                <img src="Images\photo.jpg"></div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Arpita Singh, a student of Veermata Jijabai Technological Institute, pursuing B.Tech in Computer Engineering.(2023-2027)
+    I am someone who likes to learn new skills.       </div>
+
+            </div>
+        </div>
+    </div>
+    <!-------------Skills---------->
+
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My skills</h1> 
+        <div class="skills-list">
+            <div>
+                <h2>Web development</h2>
+                <br>
+                <p><b>HTML (Hypertext Markup Language):</b> The foundational language for creating web pages, defining the structure and content of a webpage using markup tags and I have a good grip on it.
+<br>
+                    <b>CSS (Cascading Style Sheets):</b> Used to style HTML elements, controlling the layout, appearance, and formating and I have good knowmledge about it.
+                    <br>
+                    <b>JavaScript:</b> it is versatile programming language used to add interactivity and dynamic behavior to websites, including animations and I have started to learn and acquire skills in it.</p>
+              </div>  
+   <div>
+            <h2>Programming language</h2>
+            <br>I have studied basic and intermediate C++ and Java programming language and I am on my journey of learning data structures and algorithm(DSA).</p>
+            </div>
+            <div>
+            <h2>Problem Soving</h2>
+            <br>
+                <p>
+                    I have acquired Strong analytical and problem-solving skills to address complex engineering challenges .Web development often involves implementing algorithms and data structures to solve specific problems efficiently, such as sorting data, searching for information, or optimizing performance.</p>
+            </div>  
+        </div>
+    </div>
+    </div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+              }
+              for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab"); 
+              }
+              event.currentTrget.classList.add("active-link");
+              document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
